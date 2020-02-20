@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en-GB">
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        body {
+            background: #fafafa;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="demo"></div>
+
+    <service-card image="img_avatar.png" title="The title" info="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."></service-card>
+
+    <script type="module">
+        import { html, render } from 'lit-html'; import '../service-card.js'; const title = 'Title'; const image = 'img_avatar.png'; const info = "The info"; render( html`
+        <service-card .info=${info} .image=${image} .title=${title}>
+            some more light-dom
+        </service-card>
+        `, document.querySelector('#demo') );
+    </script>
+</body>
+
+</html>
