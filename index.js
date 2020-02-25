@@ -1,1 +1,1 @@
-export { ServiceCard } from './src/ServiceCard.js';
+export { ServiceCard } from './src/service-card.js';
